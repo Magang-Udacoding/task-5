@@ -44,7 +44,7 @@ function Projects() {
   ];
 
   return (
-    <main className="min-h-screen bg-gray-950 text-white">
+    <main className="min-h-screen bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-white">
 
       {/* header */}
       <section className="py-20 px-6 text-center">
@@ -53,7 +53,7 @@ function Projects() {
           My <span className="text-blue-400"> Projects</span>
         </h1>
 
-        <p className="text-gray-400 max-w-xl mx-auto">
+        <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
           My Projects I've Done Before
         </p>
       </section>

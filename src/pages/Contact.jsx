@@ -30,8 +30,8 @@ function Contact() {
   const contactInfo = [
     {
       label: "Email",
-      value: "yourname@email.com",
-      href: "mailto:yourname@email.com",
+      value: "myEmail@email.com",
+      href: "mailto:hylmikhalil@email.com",
     },
     {
       label: "WhatsApp",
@@ -46,14 +46,14 @@ function Contact() {
   ];
 
   return (
-    <main className="min-h-screen bg-gray-950 text-white">
+    <main className="min-h-screen bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-white">
       {/* header */}
       <section className="py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Get In <span className="text-blue-400"> Touch</span>
+          Get In <span className="text-blue-500 dark:text-blue-400"> Touch</span>
         </h1>
 
-        <p className="text-gray-400 max-w-xl mx-auto">
+        <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
           Have Question or Want to Work Together? Send A Messages to Me!
         </p>
       </section>
@@ -64,7 +64,7 @@ function Contact() {
           {/* contact info */}
           <div>
             <h2 className="text-2xl font-bold mb-6">
-              Contact <span className="text-blue-400"> Info</span>
+              Contact <span className="text-blue-500 dark:text-blue-400"> Info</span>
             </h2>
 
             <div className="flex flex-col gap-4">
@@ -74,13 +74,13 @@ function Contact() {
                   key={info.label}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition-all duration-200 group"
+                  className="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200 group"
                 >
-                  <p className="text-gray-400 text-sm">
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">
                     {info.label}
                   </p>
 
-                  <p className="text-white font-semibold group-hover:text-blue-400 transition-colors duration-200">
+                  <p className="text-gray-900 dark:text-white font-semibold group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors duration-200">
                     {info.value}
                   </p>
                 </a>
@@ -93,7 +93,7 @@ function Contact() {
           {/* form */}
           <div>
             <h2 className="text-2xl font-bold mb-6">
-              Send <span className="text-blue-400"> Message</span>
+              Send <span className="text-blue-500 dark:text-blue-400"> Message</span>
             </h2>
 
             {submitted ? (
@@ -116,7 +116,7 @@ function Contact() {
               <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                 {/* name */}
                 <div>
-                  <label className="block text-sm text-gray-400 mb-1">
+                  <label className="block text-sm text-gray-600 dark:text-gray-400 mb-1">
                     Name
                   </label>
                   <input
@@ -126,13 +126,13 @@ function Contact() {
                     onChange={handleChange}
                     required
                     placeholder="Your Name"
-                    className="w-full bg-gray-800 text-white rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                    className="w-full bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 transition-all placeholder-gray-400"
                   />
                 </div>
 
                 {/* email */}
                 <div>
-                  <label className="block text-sm text-gray-400 mb-1">
+                  <label className="block text-sm text-gray-600 dark:text-gray-400 mb-1">
                     E-mail
                   </label>
                   <input
@@ -142,13 +142,13 @@ function Contact() {
                     onChange={handleChange}
                     required
                     placeholder="your@email.com"
-                    className="w-full bg-gray-800 text-white rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                    className="w-full bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 transition-all placeholder-gray-400"
                   />
                 </div>
 
                 {/* message */}
                 <div>
-                  <label className="block text-sm text-gray-400 mb-1">
+                  <label className="block text-sm text-gray-600 dark:text-gray-400 mb-1">
                     Message
                   </label>
                   <textarea
@@ -158,7 +158,7 @@ function Contact() {
                     required
                     rows={5}
                     placeholder="Type your message here...."
-                    className="w-full bg-gray-800 text-white rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none"
+                    className="w-full bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none placeholder-gray-400"
                   ></textarea>
                 </div>
 

@@ -1,17 +1,35 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Home from './pages/Home'
-import About from './pages/About'
-import Projects from './pages/Projects'
-import Contact from './pages/Contact'
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 function App() {
+  // add useState n useEffect
+  const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    const root = document.documentElement;
+
+    if (theme === "dark") {
+      root.classList.add("dark");
+    } else {
+      root.classList.remove("dark");
+    }
+  }, [theme]);
+
+  function toggleTheme() {
+    setTheme(theme === "dark" ? "light" : "dark");
+  }
+
   return (
     <BrowserRouter>
       <div className="relative">
-        <Navbar />
+        <Navbar theme={theme} toggleTheme={toggleTheme} />
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,7 +41,7 @@ function App() {
         <Footer />
       </div>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
