@@ -1,4 +1,11 @@
+import { useEffect } from "react";
+
 function About() {
+  // useEffects
+  useEffect(() => {
+    document.title = 'Portfolio | About'
+  }, [])
+  
   const skills = [
     {
       category: "Frontend",
