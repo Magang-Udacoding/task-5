@@ -10,14 +10,15 @@
 - Footer: brand, navigasi, social media links
 - Home page: Hero section, Skills grid, Projects Preview
 - About page: Bio, Skills by category, Education timeline, Career Interest
-
-## What I've *not* Done
 - Projects page (full list)
 - Contact page (form)
 - useEffect — dynamic page title
 - Dark / Light Theme Toggle
 - Glassmorphism & advanced animations
 - Responsive audit & final testing
+
+## What I've *not* Done
+
 
 ## Links
 - Article Medium [Medium Task 5]().
