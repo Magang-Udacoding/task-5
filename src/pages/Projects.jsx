@@ -23,7 +23,7 @@ function Projects() {
       tech: ["JavaScript", "CSS", "HTML"],
       image:
         "https://placehold.co/600x400/1e293b/60a5fa?text=Toko+UKM+Jekartah",
-      link: "https://github.com/Magang-Udacoding/task-2",
+      link: "https://toko-ukm-jekartah.vercel.app/",
     },
     {
       id: 3,

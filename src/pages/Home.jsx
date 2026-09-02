@@ -77,7 +77,7 @@ function Home() {
       desc: "Aplikasi todo list terintegrasi dengan Weather API real-time",
       tech: ["JavaScript", "CSS", "Weather API"],
       image: "https://placehold.co/600x400/1e293b/60a5fa?text=Todo+Weather",
-      link: "https://github.com/Magang-Udacoding/task-3n4",
+      link: "https://todoweather.vercel.app/",
     },
     {
       id: 2,
@@ -86,7 +86,7 @@ function Home() {
       tech: ["JavaScript", "CSS", "HTML"],
       image:
         "https://placehold.co/600x400/1e293b/60a5fa?text=Toko+UKM+Jekartah",
-      link: "https://github.com/Magang-Udacoding/task-2",
+      link: "https://ukmjekartahh.vercel.app",
     },
     {
       id: 3,
