@@ -14,7 +14,7 @@ function Projects() {
       desc: "Aplikasi todo list terintegrasi dengan Weather API real-time",
       tech: ["JavaScript", "CSS", "Weather API"],
       image: "https://placehold.co/600x400/1e293b/60a5fa?text=Todo+Weather",
-      link: "https://github.com/Magang-Udacoding/task-3n4",
+      link: "https://todoweather.vercel.app/",
     },
     {
       id: 2,
@@ -39,7 +39,7 @@ function Projects() {
       desc: "Personal portfolio multi-page dibangun dengan React 18, React Router v6, dan Tailwind CSS v4.",
       tech: ["React", "Tailwind CSS", "Vite", "React Router"],
       image: "https://placehold.co/600x400/1e293b/60a5fa?text=Portfolio",
-      link: "https://https://aboutpail.vercel.app",
+      link: "https://aboutpail.vercel.app",
     },
     {
       id: 5,
