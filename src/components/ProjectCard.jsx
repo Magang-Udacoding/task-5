@@ -31,7 +31,7 @@ function ProjectCard({ title, desc, tech, image, link }) {
           rel="noopener noreferrer"
           className="text-center border border-blue-500 text-blue-500 dark:text-blue-400 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200"
         >
-          View on GitHub →
+          View Projects →
         </a>
       </div>
 
