@@ -23,7 +23,7 @@ function Projects() {
       tech: ["JavaScript", "CSS", "HTML"],
       image:
         "/img/ukmjekartah.png",
-      link: "https://toko-ukm-jekartah.vercel.app/",
+      link: "https://ukmjekartahh.vercel.app/",
     },
     {
       id: 3,
