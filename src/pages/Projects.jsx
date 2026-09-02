@@ -13,7 +13,7 @@ function Projects() {
       title: "Todo Weather App",
       desc: "Aplikasi todo list terintegrasi dengan Weather API real-time",
       tech: ["JavaScript", "CSS", "Weather API"],
-      image: "https://placehold.co/600x400/1e293b/60a5fa?text=Todo+Weather",
+      image: "/img/todo.png",
       link: "https://todoweather.vercel.app/",
     },
     {
@@ -22,7 +22,7 @@ function Projects() {
       desc: "Landing Page untuk UKM Toko Jekartah sebagai sistem informasi untuk calon pembeli",
       tech: ["JavaScript", "CSS", "HTML"],
       image:
-        "https://placehold.co/600x400/1e293b/60a5fa?text=Toko+UKM+Jekartah",
+        "/img/ukmjekartah.png",
       link: "https://toko-ukm-jekartah.vercel.app/",
     },
     {
@@ -38,7 +38,7 @@ function Projects() {
       title: "Portfolio Website",
       desc: "Personal portfolio multi-page dibangun dengan React 18, React Router v6, dan Tailwind CSS v4.",
       tech: ["React", "Tailwind CSS", "Vite", "React Router"],
-      image: "https://placehold.co/600x400/1e293b/60a5fa?text=Portfolio",
+      image: "/img/portfolio.png",
       link: "https://aboutpail.vercel.app",
     },
     {
@@ -46,7 +46,7 @@ function Projects() {
       title: "Money Tracker Website",
       desc: "Aplikasi pelacakan pengeluaran dan pemasukan keuangan secara native.",
       tech: ["React", "Tailwind CSS", "Vite", "React Router"],
-      image: "https://placehold.co/600x400/1e293b/60a5fa?text=Money+Tracker",
+      image: "/img/moneymanager.png",
       link: "https://mymoneytracxed.vercel.app",
     },
   ];

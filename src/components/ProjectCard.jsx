@@ -1,9 +1,30 @@
 function ProjectCard({ title, desc, tech, image, link }) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 flex flex-col border border-gray-200 dark:border-gray-700 hover:border-blue-500/30">
+    <div className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 flex flex-col border border-gray-200 dark:border-gray-700 hover:border-blue-500/30 group">
 
       {/* image */}
-      <img src={image} alt={title} className="w-full h-48 object-cover" />
+      <div className="relative overflow-hidden aspect-video bg-blue-100 dark:bg-gray-700">
+        <img
+          src={image}
+          alt={title}
+          onError={(e) => {
+            e.currentTarget.onerror = null;
+            e.currentTarget.src =
+              "https://placehold.co/600x400/1e293b/60a5fa?text=Project";
+          }}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+        >
+          <span className="text-white text-sm font-semibold border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-gray-900 transition-colors duration-200">
+            View Project
+          </span>
+        </a>
+      </div>
 
       {/* content */}
       <div className="p-6 flex flex-col flex-1">

@@ -76,7 +76,7 @@ function Home() {
       title: "Todo Weather App",
       desc: "Aplikasi todo list terintegrasi dengan Weather API real-time",
       tech: ["JavaScript", "CSS", "Weather API"],
-      image: "https://placehold.co/600x400/1e293b/60a5fa?text=Todo+Weather",
+      image: "/img/todo.png",
       link: "https://todoweather.vercel.app/",
     },
     {
@@ -85,7 +85,7 @@ function Home() {
       desc: "Landing Page untuk UKM Toko Jekartah sebagai sistem informasi untuk calon pembeli",
       tech: ["JavaScript", "CSS", "HTML"],
       image:
-        "https://placehold.co/600x400/1e293b/60a5fa?text=Toko+UKM+Jekartah",
+        "/img/ukmjekartah.png",
       link: "https://ukmjekartahh.vercel.app",
     },
     {
