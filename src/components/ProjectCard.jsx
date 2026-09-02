@@ -14,16 +14,6 @@ function ProjectCard({ title, desc, tech, image, link }) {
           }}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
-        >
-          <span className="text-white text-sm font-semibold border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-gray-900 transition-colors duration-200">
-            View Project
-          </span>
-        </a>
       </div>
 
       {/* content */}
